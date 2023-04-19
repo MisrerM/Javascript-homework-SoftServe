@@ -7,88 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma UA</title>
     <link rel="shortcut icon" href="img/ukraine.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="header">
-        <img width="300" src="img/main.png" alt="main-photo">
-
-        <nav class="header__nav">
-            <div class="header__nav-menu">
-                <img src="img/figma-land.png" alt="main-logo">
-                <a href="#home" class="menu__item">Home</a>
-                <a href="#product" class="munu__item">Product</a>
-                <a href="#pricing" class="munu__item">Pricing</a>
-                <a href="#about" class="munu__item">About</a>
-                <a href="#contact" class="munu__item">Contact</a>
-            </div>
-            <div class="header__nav-img">
-                <a target="_blank" href="https://twitter.com">
-                    <img src="img/twitter.png" alt="twitter-logo.png">
-                </a>
-                <a target="_blank" href="https://www.facebook.com">
-                    <img src="img/facebook.png" alt="facebook-logo.png">
-                </a>
-                <a target="_blank" href="https://www.instagram.com">
-                    <img src="img/instagram.png" alt="instagram-logo.png">
-                </a>
-
-            </div>
-
-
-        </nav>
-        <section class="about__figma">
-            <h1>The best products start with Figma</h1>
-            <p class="about__figma-main">
-                Most calendars are designed for teams. Slate is designed for freelancers
-            </p>
-            <button type="button">Try For Free</button>
-        </section>
-
-
-
-    </header>
+    <header data-include="header.partial.html"></header>
     <main>
-        <section class="features__fifma">
-            <h2 class="features__fifma-title">Features</h2>
-            <p class="features__fifma-title">Most calendars are designed for teams.
-                Slate is designed for freelancers
-            </p>
-
-        </section>
-        <div class="open__tipe">
-            <img src="img/opentipe.png" alt="opentipe-logo">
-            <h4 class="open__tipe-title">OpenType features Variable fonts</h4>
-            <p class="open__tipe-title">Slate helps you see how
-                many more days you need
-                to work to reach your
-                financial goal.</p>
-        </div>
-        <div class="design">
-            <img src="img/design.png" alt="design-logo">
-            <h4 class="design-title">Design with real data</h4>
-            <p class="design-title">Slate helps you see how
-                many more days you need
-                to work to reach your
-                financial goal.</p>
-        </div>>
-        <div class="fasrest-way">
-            <img src="img/fastest-way.png" alt="fasrest-way-logo">
-            <h4 class="fasrest-way-title">Fastest way to take action</h4>
-            <p class="fasrest-way-title">Slate helps you see how 
-                many more days you need 
-                to work to reach your 
-                financial goal.</p>
-        </div>>
-        <img src="img/screen.png" alt="">
+        <section  data-include="main.partial.html"></section>
     </main>
 
+       
 
-
-    <footer>
-
-    </footer>
-
+    <footer data-include="footer.partial.html"></footer>
+    <script src="https://unpkg.com/html-data-include@1.1.1/html-data-include.js"></script>
 </body>
 
 </html>
