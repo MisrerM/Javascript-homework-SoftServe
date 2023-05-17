@@ -49,5 +49,31 @@ const secDay = secHour * 24;
 const secMonth = secDay * 31;
 console.log(secHour, secDay, secMonth);
 // Homework 1 Task ***
-
+function findSection() {
+    const ticketNumber = parseInt(document.getElementById("ticketNumber").value);
+  
+    if (ticketNumber >= 1 && ticketNumber <= 54) {
+      let sectionNumber;
+      let seatType;
+      let bedType;
+  
+      if (ticketNumber <= 36) {
+        sectionNumber = Math.ceil(ticketNumber / 4);
+        seatType = "купейне";
+        bedType = ticketNumber % 2 === 0 ? "верхнє" : "нижнє";
+      } else {
+        sectionNumber = Math.ceil((ticketNumber - 36) / 2);
+        seatType = "бічне";
+        bedType = ticketNumber % 2 === 0 ? "верхнє" : "нижнє";
+      }
+  
+      document.getElementById("result").innerHTML =
+        "Номер купе: " + sectionNumber +
+        "<br>Тип місця: " + seatType +
+        "<br>Тип ліжка: " + bedType;
+    } else {
+      document.getElementById("result").innerHTML = "Невірний номер місця";
+    }
+  }
+  
 
