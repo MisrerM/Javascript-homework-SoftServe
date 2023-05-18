@@ -1,3 +1,4 @@
+/* 
 // Homework 1 Task 2
 console.log("Romaniuk");
 // Homework 1 Task 3
@@ -76,4 +77,6 @@ function findSection() {
     }
   }
   
+*/
+
 
