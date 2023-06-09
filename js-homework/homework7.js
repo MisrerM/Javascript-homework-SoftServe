@@ -70,10 +70,10 @@ const btnTask5 = document.querySelector(".btnTask5");
 //Створюємо самі події 
 btnTask5.addEventListener('click', function() {
     alert("I was pressed!");
-})
+});
 btnTask5.addEventListener('mouseover', function() {
     console.log("Mouse on me!");
-})
+});
 btnTask5.addEventListener('mouseout', function() {
     console.log("Mouse is not on me!");
 })
