@@ -83,4 +83,6 @@ let names = {
   console.log(map.get(2)); // "span"
   
   //Homework 10 Task 6
+
+  
   
